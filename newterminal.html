@@ -379,7 +379,30 @@
                     </div>
                     <div class="form-group">
                         <label for="routes">Default Route(Only one):</label>
-                        <textarea class="form-control" id="routes" name="routes"></textarea>
+                        <div class="row ml-1">
+                            <div class="form-group col-12 col-md-3 d-flex mr-3">
+                                <label for="routeFrom" class="mr-1">From:</label>
+                                <input type="text" class="form-control" id="routeFrom" name="routeFrom" required>
+                            </div>
+                            <div class="form-group col-12 col-md-3 d-flex">
+                                <label for="routeTo" class="mr-1">To:</label>
+                                <input type="text" class="form-control" id="routeTo" name="routeTo" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="routes">Route Pricing:</label>
+                        <div class="row ml-1">
+                            <select class="form-select col-5 col-md-3" aria-label="Route Pricing">
+                                <option selected>Seats</option>
+                                <option value="1">14</option>
+                                <option value="2">18</option>
+                            </select>
+                            <div class="form-group col-5 col-md-3 d-flex">
+                                <label for="routePrice" class="mr-1">Price:</label>
+                                <input type="text" class="form-control" id="routePrice" name="routePrice" required>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group form-check form-switch">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>

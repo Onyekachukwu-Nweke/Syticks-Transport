@@ -361,7 +361,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <h1 class="h3 mb-2 text-gray-800">Add New Terminal</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Add New Route</h1>
                     <form>
                     <div class="form-group">
                         <label for="terminal-id">Terminal ID:</label>
@@ -375,18 +375,19 @@
                         <label for="location">Location(State):</label>
                         <input type="text" class="form-control" id="location" name="location" required>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label for="location">Address:</label>
                         <input type="text" class="form-control" id="location" name="location" required>
-                    </div>
+                    </div> -->
                     <div class="form-group">
                         <label for="routes">Default Route(Only one):</label>
                         <div class="row ml-1">
-                            <div class="form-group col-5 col-md-3 d-flex mr-3">
+                            <div class="form-group col-12 col-md-3 d-flex mr-3">
                                 <label for="routeFrom" class="mr-1">From:</label>
-                                <input type="text" class="form-control" id="routeFrom" name="routeFrom" required>
+                                <br>
+                                <input type="text" class="form-control" id="routeFrom" name="routeFrom" value="Jibowu" required disabled readonly>
                             </div>
-                            <div class="form-group col-5 col-md-3 d-flex">
+                            <div class="form-group col-12 col-md-3 d-flex">
                                 <label for="routeTo" class="mr-1">To:</label>
                                 <input type="text" class="form-control" id="routeTo" name="routeTo" required>
                             </div>
@@ -395,31 +396,17 @@
                     <div class="form-group">
                         <label for="routes">Route Pricing:</label>
                         <div class="row ml-1">
-                            <select class="form-select col-5 col-md-3" aria-label="Route Pricing">
-                                <option selected>Seaters</option>
+                            <select class="form-select col-12 col-md-3 mb-2 mb-md-0" aria-label="Route Pricing">
+                                <option selected>Seats</option>
                                 <option value="1">14</option>
                                 <option value="2">18</option>
                             </select>
-                            <div class="form-group col-5 col-md-3 d-flex">
+                            <div class="form-group col-12 col-md-3 d-flex">
                                 <label for="routePrice" class="mr-1">Price:</label>
                                 <input type="text" class="form-control" id="routePrice" name="routePrice" required>
                             </div>
                         </div>
                     </div>
-                    <div class="form-group form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                        <label class="form-check-label" for="flexSwitchCheckChecked">Do you want terminal to be independent of Headquarters</label>
-                      </div>
-                    <div class="form-group">
-                        <label for="admin-password">Admin Email:</label>
-                        <input type="email" class="form-control" id="admin-email" name="admin-email">
-                    </div>
-                    <div class="form-group">
-                        <label for="admin-password">Admin Password:</label>
-                        <input type="password" class="form-control" id="admin-password" name="admin-password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
                 </div>
                 <!-- /.container-fluid -->
 
